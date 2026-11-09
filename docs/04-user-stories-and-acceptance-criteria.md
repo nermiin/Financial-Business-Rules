@@ -128,6 +128,21 @@ Feature: Synchronous eligibility evaluation
     And application appears in manual review queue within 30 seconds
 ```
 
+### US-007 — Read-only rule catalog
+
+**As a** CRM or LOS user  
+**I want** to view the active rules and reason codes  
+**So that** I can explain an outcome without asking Risk
+
+**Priority:** Should | **Story points:** 3
+
+#### Acceptance Criteria
+
+- Returns rule ID, version, effective date, and description.
+- Draft and scheduled versions are not visible to read-only consumers.
+
+---
+
 ## Definition of Done
 
 - [ ] Code reviewed and merged
